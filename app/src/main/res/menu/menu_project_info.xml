@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="msi.myapplication.ProjectInfoActivity">
+
+    <item android:id="@+id/vk_share"
+        android:title="vk"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/swipeup24"
+        android:actionProviderClass=
+            "android.widget.ShareActionProvider"/>
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

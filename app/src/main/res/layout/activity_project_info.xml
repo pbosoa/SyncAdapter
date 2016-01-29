@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="msi.myapplication.ProjectInfoActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="126dip"
+        android:layout_height="140dip"
+        android:contentDescription="TODO"
+        android:src="@drawable/question_mark"
+        android:background="#000000"
+        android:padding="1dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:text="Name of the project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logo"
+        android:id="@+id/project"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Name of student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/student"
+        android:textSize="24sp"
+        android:layout_below="@+id/project"
+        android:layout_toRightOf="@+id/logo"
+        android:paddingTop="4dip" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate2"
+        android:layout_below="@+id/student"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_toEndOf="@+id/logo"
+        android:numStars="4"
+        android:paddingTop="4dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Here description should be"
+        android:id="@+id/description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/programmingLanguage"
+        android:layout_marginTop="5dip"
+        android:layout_above="@+id/button" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="http:\\www.link.ru"
+        android:id="@+id/websiteLink"
+        android:textSize="27sp"
+        android:layout_below="@+id/rate2"
+        android:layout_toStartOf="@+id/rate2"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignEnd="@+id/description"
+        android:gravity="center_horizontal"
+        android:onClick="linkToWebView"
+        android:clickable="true"
+        android:textColor="#ff0002ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="JAVA"
+        android:id="@+id/programmingLanguage"
+        android:layout_below="@+id/websiteLink"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_alignRight="@+id/description"
+        android:layout_alignEnd="@+id/description"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="delete"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/rate2"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="update"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button"
+        android:layout_alignLeft="@+id/rate2"
+        android:layout_alignStart="@+id/rate2" />
+
+</RelativeLayout>

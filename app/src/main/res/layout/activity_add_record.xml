@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectNameEditText"
+        android:singleLine="true"
+        android:hint="Enter Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/addStudentName"
+        android:singleLine="true"
+        android:hint="Enter Author"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addLink"
+        android:singleLine="true"
+        android:hint="Enter Link"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addLang"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="false"
+        android:hint="Enter programming language"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/addDescription"
+        android:layout_gravity="center_horizontal"
+        android:hint="Input description" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveRecordButton"
+        android:background="@color/hint_foreground_material_light"
+        android:onClick="sendBack"/>
+</LinearLayout>

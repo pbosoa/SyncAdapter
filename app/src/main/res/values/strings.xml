@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ratings</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_project_info">Info about the project</string>
+    <string name="title_activity_add_record">AddRecordActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_authenticator">AuthenticatorActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_web_open_link">WebOpenLinkActivity</string>
+</resources>
